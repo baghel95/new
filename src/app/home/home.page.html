@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Orders
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+   
+    <ion-list>
+      <ion-item *ngFor="let order of orders">
+        <ion-label text-wrap>
+          <h3> {{order.name}}</h3>
+          {{ order.address }}
+        </ion-label>
+        <ion-icon slot="end"  name="call" (click)="phone(order.phone)"></ion-icon>
+      <ion-icon slot="end"  name="location" (click)="location(order.location)"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

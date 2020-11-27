@@ -1,0 +1,7 @@
+{
+  "name": "sworks",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
